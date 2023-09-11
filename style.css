@@ -1,0 +1,394 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 150px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+li{
+    padding: 10px;
+}
+
+
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+}
+
+.contain {
+    height: 420vh;
+    width: 100%;
+    background: radial-gradient(circle, rgb(29, 29, 53) 40%, rgb(32, 30, 37) 100%);
+    color: white;
+
+}
+
+main{
+    display: flex;
+}
+
+.image{
+    width: 50%;
+}
+
+
+.image img{
+    width: 320px;
+}
+
+.main-content{
+    width: 50%;
+}
+
+.main-content h1{
+    font-size: 100px;
+
+}
+
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 150px;
+}
+
+
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+#downloadbtn{
+    padding: 15px 20px;
+    font-size: 20px;
+    margin: 20px 0%;
+    border-radius: 10px;
+    outline: 2px solid rgb(83, 83, 189);
+    border: none;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+#about p{
+    width: 70%;
+    line-height: 35px;
+    text-align: justify;
+    
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+
+#about h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+#second .image{
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+#second ul{
+    list-style-type: none;
+    width: 70%;
+}
+
+#second b{
+    line-height: 50px;
+
+}
+
+#second     span{
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 2;
+    display: block;
+    margin-top: 10px;
+}
+
+#second #downloadbtn{
+    margin-left: 20px;
+}
+
+#second{
+    margin-top: 10px;
+}
+
+#second h1{
+    font-size: 60px;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 30px;
+    row-gap: 80px;
+    padding: 60px;
+    max-width: 1100px;
+    margin: auto;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.features :first-child{
+    grid-column: 1/3;
+    font-size: 60px;
+}
+
+head{
+    display: grid;
+}
+
+.floatingrib i{
+    font-size: 70px;
+    font-weight: 600;
+}
+
+
+.floatingrib{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.floatingrib:hover{
+    background-color: white;
+    color: rgb(32, 30, 37);
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(4, 3, 63, 0.75);
+}
+
+head span{
+
+    font-size: 20px;
+    color: rgb(83, 83, 189);
+}
+
+.floatingrib p{
+    font-size: 15px;
+    line-height: 20px;
+    width: 90%;
+}
+
+.rogue{
+    text-align: center;
+    margin-top: 100px;     
+}
+
+#downloadbtn::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(83, 83, 189);
+    z-index: -1;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+#downloadbtn:hover::before{
+    transform: scaleX(1);
+    
+}
+
+li #downloadbtn{
+    margin: none;
+}
+
+h1{
+    background: linear-gradient(to right, rgb(160, 160, 218), rgb(82, 110, 201));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+}
+footer{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media screen and (max-width : 800px) {
+    nav{
+        padding: 0%;
+        flex-direction: column;
+        padding-top: 10px;
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
+        row-gap: 20px;
+        padding-top: 50px;
+        display: none;
+    
+    }
+
+
+    .nav h1{
+        text-align: center;
+    }
+
+    nav ul a{
+        font-size: 20px;
+        margin: 0 0px;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    main #downloadbtn{
+        width: 60%;
+    }
+
+    #downloadbtn{
+        padding: 10px;
+        font-size: 15px;
+        display: inline-block;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 16px;
+
+    }
+
+    nav ul li {
+        padding: 5px;
+    }
+
+    .logo h1{
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    main{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-content h1{
+        font-size: 60px;
+    }
+
+    #about h1{
+        text-align: center;
+    }
+    
+
+    #second .main-content{
+        align-items: center;
+    }
+
+    #second #downloadbtn{
+        margin: auto;
+        margin-top: 20px;
+    }
+
+
+
+    .features{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        row-gap: 30px;
+        padding: 10px;
+        max-width: 1100px;
+        margin: auto;
+        margin-top: 30px;
+        font-family: 'Varela Round', sans-serif;
+    }
+    
+    .features :first-child{
+        grid-column: 1/3;
+        font-size: 60px;
+        text-align: center;
+    }
+    
+    .floatingrib i{
+        font-size: 50px;
+    }
+    
+    
+    .floatingrib{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;
+    }
+    
+    .floatingrib h2{
+        text-align: center;
+    }
+    
+    .floatingrib p{
+        text-align: justify;
+    }
+
+    #all{
+        padding-top:30px;
+    }
+}
+
+#burger{
+    display: none;
+    color: white;
+    position: absolute;
+    top:50px;
+    left: 20px;
+    font-size: 25px;
+    z-index: 1;
+}
