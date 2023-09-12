@@ -1,7 +1,7 @@
 heading1 = document.querySelector('#heading1')
 heading2 = document.querySelector('#heading2')
 heading3 = document.querySelector('#heading3')
-downloadbtn = document.querySelector('#downloadbtn')
+download_btn = document.querySelector('#download_btn')
 image = document.querySelector('.image')
 console.log(heading1)
 

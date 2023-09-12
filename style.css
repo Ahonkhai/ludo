@@ -1,6 +1,6 @@
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 
     font-family: 'Open Sans', sans-serif;
 
@@ -27,17 +27,26 @@ li{
 
 a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22px;
     margin: 0 10px;
     color: white;
+    transition: font-weight 150ms;
+}
+
+a:hover{
+    font-weight: bold;
 }
 
 .contain {
     height: 420vh;
     width: 100%;
-    background: radial-gradient(circle, rgb(29, 29, 53) 40%, rgb(32, 30, 37) 100%);
+    /* background: radial-gradient(circle, rgb(29, 29, 53) 40%, rgb(32, 30, 37) 100%); */
     color: white;
 
+}
+
+.begin{
+    background-color: rgb(31, 26, 50);
 }
 
 main{
@@ -46,6 +55,7 @@ main{
 
 .image{
     width: 50%;
+    filter: drop-shadow( 24px 24px 24px rgba(0, 0, 0, 0.599))
 }
 
 
@@ -94,6 +104,29 @@ body{
     overflow-x: hidden;
 }
 
+.custom-shape-divider-top-1694537231 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1694537231 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1694537231 .shape-fill {
+   fill: rgb(31, 26, 50);;
+}
+
+#about{
+    background-color: rgb(93, 59, 207);
+}
 
 #about p{
     width: 70%;
@@ -114,6 +147,26 @@ body{
 #about h1{
     font-size: 50px;
     margin-bottom: 40px;
+}
+
+.custom-shape-divider-bottom-1694538578 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1694538578 svg {
+    position: relative;
+    display: block;
+    width: calc(160% + 1.3px);
+    height: 124px;
+}
+
+.custom-shape-divider-bottom-1694538578 .shape-fill {
+    fill: rgb(31, 26, 50);
 }
 
 #second .image{
